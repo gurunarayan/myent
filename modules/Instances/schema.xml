@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<schema>
+	<tables>
+		<table>
+			<name>vtiger_instances</name>
+			<sql><![CDATA[CREATE TABLE IF NOT EXISTS `vtiger_instances` ( `instancesid` int(50) NOT NULL, `instancename` varchar(250) NOT NULL, PRIMARY KEY (`instancesid`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		]]></sql>
+		</table>
+		<table>
+			<name>vtiger_instancescf</name>
+			<sql><![CDATA[CREATE TABLE IF NOT EXISTS `vtiger_instancescf` (`instancesid` int(50) NOT NULL, host varchar(100) DEFAULT NULL, username varchar(100) DEFAULT NULL, password varchar(100) DEFAULT NULL, dbname varchar(100) DEFAULT NULL, PRIMARY KEY (`instancesid`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		]]></sql>
+		</table>
+	</tables>
+</schema>
